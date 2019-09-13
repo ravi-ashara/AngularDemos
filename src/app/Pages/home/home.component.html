@@ -1,1 +1,8 @@
 <a [routerLink]="['/about']">About</a>
+<div>
+    <form [formGroup]="loginForm">
+        <input type="file" name="file" formControlName="file" #file style="display:none;" (change)="inputFile($event)">
+        <!-- <ejs-datepicker id='datepicker' formControlName="startDate" name="startDate" placeholder='Select a date' [value]='dateValue' format='dd/MM/yyyy' (change)="changeDate()" #ejDatePicker></ejs-datepicker> -->
+        <button (click)="add()">Confirm box</button>
+    </form>
+</div>
